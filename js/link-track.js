@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let links = document.querySelectorAll('a[href="#"]'), // get all links that scroll to form
       hiddenInput = document.getElementById('clickedLink');
 
-  console.log(`Links found: ${links.length}`);
+  //console.log(`Links found: ${links.length}`);
 
   for (let i=0; i < links.length; i++) {
     let link_id = 'link' + i;
