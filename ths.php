@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dziękuję! Twoje zamówienie zostało zaakceptowane!</title>
+    <title>Complimenti! Il tuo ordine è stato accettato!</title>
     <link rel="stylesheet" href="ths.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
@@ -16,47 +16,47 @@
       <div class="header">
         <div class="title">
           <span class="main-title">
-		  Dziękuję!
+		  Complimenti!
 		  </span><br />
-          Twoje zamówienie <br>zostało zaakceptowane!
+          Il tuo ordine è stato <br>accettato!
         </div>
         <span>
-		Wkrótce operator skontaktuje się z tobą w celu potwierdzenia zamówienia.
+		Prossimamente l'operatore la contatterà per confermare l'ordine.
         </span>
       </div>
 
       <div class="form">
-        <p>Sprawdź, czy wprowadzone dane są poprawne.</p>
+        <p>Pregiamo di verificare che le informazioni inserite siano corrette.</p>
         <div class="form-wrap">
           <div class="wrap-input">
             <div class="input">
-              <label for="name">Imię</label>
+              <label for="name">Nome</label>
               <div><?php echo ($data["name"])?></div>
             </div>
             <div class="input">
-              <label for="name">Numer telefonu</label>
+              <label for="name">Telefono</label>
               <div><?php echo ($data["phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">
-            Zmień dane
+            Modificare i dati
           </button>
 
           <form
             class="hidden-form" id="form" method="post"
-             geo="pl" action="api.php" 
-	onsubmit="return validate_form(this, 'Sprawdź, czy wprowadzone dane są poprawne');"
+             geo="it" action="api.php" 
+	onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');"
 			>
 			
-            <input type="text" name="name" required="" placeholder="Imię" />
+            <input type="text" name="name" required="" placeholder="Nome" />
 
-            <input type="tel" name="phone" required="" placeholder="Numer telefonu" />
+            <input type="tel" name="phone" required="" placeholder="Telefono" />
 
-            <button type="submit">Zmień dane</button>
+            <button type="submit">Modificare i dati</button>
 
-            <input name="subid" type="hidden" value="{subid}" />
-            <input name="px" type="hidden" value="{px}" />
-            <input name="bayer" type="hidden" value="{bayer}" />
+<input name="subid" type="hidden" value="<?php echo $data['data1']; ?>" />
+<input name="px" type="hidden" value="<?php echo $data['px']; ?>" />
+<input name="bayer" type="hidden" value="<?php echo $data['data2']; ?>" />
           </form>
         </div>
       </div>

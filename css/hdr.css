@@ -912,9 +912,12 @@ div,ul,li,p {
 
 p {
     margin-bottom: 1rem;
-    font-size: inherit;
+    font-size: 18px;
     line-height: 1.6;
     text-rendering: optimizeLegibility
+}
+.text-big{
+  font-size:18px;
 }
 
 a {
@@ -1257,8 +1260,4 @@ body {
     .site__footer .footer__copy {
         margin:1.5625rem 0 1.5625rem 0
     }
-}
-
-.text-big{
-  font-size:15px;
 }

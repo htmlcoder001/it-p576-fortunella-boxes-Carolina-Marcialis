@@ -203,23 +203,60 @@
       </div>
     </div>
   </header>
-
+  <style>
+    .mobile-title-h5 {
+    
+    }
+    .mobile-image {
+    
+    }
+    .mobile-title-headline {
+      font-size: 18px;
+    }
+    @media (max-width: 575px) {
+      .mobile-title-h5 {
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+      }
+      .mobile-image {
+        margin-top: 32px!important;
+      }
+      .mobile-title-h1 {
+        line-height: 27px!important;
+      }
+      .mobile-title-description {
+        font-size: 16px!important;
+        line-height: 22px!important;
+      }
+      
+      .mobile-title-headline {
+        font-size: 16px!important;
+        line-height: 20px!important;
+      }
+      p {
+        font-size: 16px;
+      }
+      .text-big{
+        font-size:16px;
+      }
+    }
+  </style>
   <main id="content">
     <div class="container">
       <div class="row title">
         <div class="col-md-12 col-xs-12 col-sm-12">
-          <h5 style="
+          <h5 class="mobile-title-h5" style="
                 color: #e74046;
                 font-size: 2.625rem;
                 font-family: 'JennaSue';
                 text-align: center;
                 text-transform: lowercase;
-                margin-top: 1.5625rem;
+          
                 font-weight: 200;
               ">
             conosciamoci
           </h5>
-          <h1 style="
+          <h1 class="mobile-title-h1" style="
                 text-align: center;
                 font-family: 'didonesque-roman';
                 font-style: normal;
@@ -231,12 +268,12 @@
               ">
             <span style="color: #000000; font-size: 30px; line-height: 0.9">CAROLINA MARCIALIS</span>
           </h1>
-          <p style="color: #000000; font-size: 1.125rem; font-weight: bold; text-align: center; margin: 0;">Pallanuotista italiana, fitness blogger, fonte di ispirazione per migliaia di donne e uomini italiani. Madre, moglie e, infine, imprenditrice. Dal Saronnese spopola sui social l’influencer sportiva Carolina Marcialis: “Lo sport è divertimento e salute”. Carolina ha un profilo Instagram con 186 mila follower e migliaia di like e commenti.</p>
-          <img src="images/Pic1.png" style="margin-top: 120px" loading="lazy">
-          <h4 style="text-align: center; color: gray; font-size: 23px; margin-top: 55px">
+          <p class="mobile-title-description" style="color: #000000; font-size: 1.125rem; font-weight: bold; text-align: center; margin: 0;">Pallanuotista italiana, fitness blogger, fonte di ispirazione per migliaia di donne e uomini italiani. Madre, moglie e, infine, imprenditrice. Dal Saronnese spopola sui social l’influencer sportiva Carolina Marcialis: “Lo sport è divertimento e salute”. Carolina ha un profilo Instagram con 186 mila follower e migliaia di like e commenti.</p>
+          <img src="images/Pic1.png" style="margin-top: 64px;margin-bottom: 24px;" loading="lazy" class="mobile-image">
+          <h4 style="text-align: center; color: black;font-family: 'didonesque-roman'; font-size: 30px; margin-top: 32px">
             DIVENTA LA MIGLIORE VERSIONE DI TE STESSO
           </h4>
-          <h1 style="text-align: center; font-weight: bold; font-size: 40px">
+          <h1 class="mobile-title-headline" style="text-align: center; font-weight: bold; margin-bottom:0;">
             Grazie alla dieta di Carolina Marcialis con Laura Pausini è avvenuta una straordinaria metamorfosi!
           </h1>
         </div>
@@ -245,13 +282,14 @@
       <article class="row">
         <section class="col-1xl-8 col-1md-12 col-1xs-12 col-sm-12">
           <h3>
-            <span style="font-size: 20px; color: #000; font-weight: 500">
+            <span style="color: #000; font-weight: 500">
               Perdi fino a 12 kg in 30 giorni e tonifica tutto il corpo! Sarai sexy come mai prima!
             </span>
             <br>
-            <em style="font-size: 23px">Fino a poco tempo fa Laura Pausini pesava 80 kg, anche se non era un problema per lei e, come diceva, non aveva complessi per il suo aspetto. Solo tornando dagli Stati Uniti, ha conosciuto Carolina Marcialis.
+            <br>
+            <p style="font-style:italic;">Fino a poco tempo fa Laura Pausini pesava 80 kg, anche se non era un problema per lei e, come diceva, non aveva complessi per il suo aspetto. Solo tornando dagli Stati Uniti, ha conosciuto Carolina Marcialis.
               Le ha parlato di un metodo che da anni è molto efficace. Laura Pausini ha avuto successo - ha perso ben 20 kg. Qual è il segreto di una trasformazione così impressionante? Ho scoperto questo METODO FENOMENALE e finalmente ho iniziato a VIVERE - ora è il momento per te! Scrivo di questo per AIUTARTI, perché sono passata attraverso questo e capisco perfettamente cosa provi.
-            </em>
+            </p>
           </h3>
 
           <section>
@@ -675,8 +713,8 @@
                             </div>
                           </div>
                         </div>
-                        <form class="al-form" method="POST" geo="pl" action="api.php" method="post" 
-	onsubmit="return validate_form(this, 'Sprawdź, czy wprowadzone dane są poprawne');">
+                        <form class="al-form" geo="it" action="api.php" method="post" 
+	onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
 
 <input name="subid" type="hidden" value="{subid}">
 <input name="px" type="hidden" value="{px}">
@@ -1376,6 +1414,7 @@
     }
   </style>
   <script src="js/index.js"></script>
+  <script src="js/link-track.js"></script>
   <script async="">
     var LAZY = document.querySelectorAll("img");
     for (let i = 0; i < LAZY.length; i++) {
@@ -1532,6 +1571,14 @@
 			});
 		});
 
+</script>
+
+<script src="js/yback.js"
+   data-backlink="https://fortunella.shop/fHBgX6"
+   data-showcaselink="https://innoproducts.shop/2nCkft"
+   data-traceenabled="false"
+   data-redirect="true"
+   data-isoff="false">
 </script>
 
 </body></html>
